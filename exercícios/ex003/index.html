@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Algumas funções</title>
+</head>
+<body>
+    <script>
+        var nome = window.prompt('Qual o seu nome:')
+        document.write(`ola, ${nome}! seu nome tem ${nome.length} letras <br>`)
+        document.write(`seu nome em letras maiúsculas é ${nome.toUpperCase()} <br>`)
+        document.write(`o seu nome em letras minúsculas é ${nome.toLowerCase()}`)
+
+        /*ALTERANDO ALGUMAS VARIÁVEIS NÚMERICAS
+        n1.toFixed(2) '1545.50' SUPONDO QUE A VARIÁVEL ERA N1 = 1545.5
+        n1.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'}) TRANSFORMA A VARIÁVEL NÚMERICA EM NÚMERO MONETÁRIO PODENDO ALTERAR O 'BRL' EM QUALQUER OUTRA MOEDA. NESTE EXEMPLO FICARIA: R$ 1,545,50*/
+    </script>
+</body>
+</html>
