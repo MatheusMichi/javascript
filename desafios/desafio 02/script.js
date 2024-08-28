@@ -15,36 +15,37 @@ function verificar () {
             genero = 'homem'
             if (idade >= 0 && idade < 10) {
                 //CRIANÇA   
-                img.setAttribute('src', 'foto-menino.png')
+                img.setAttribute('src', 'menino.png')
             }   else if (idade < 21) {
                 //JOVEM
-                img.setAttribute('src','foto-homemjovem.png')
+                img.setAttribute('src','homemjovem.png')
             } else if (idade < 60) {
                 //ADULTO
-                img.setAttribute('src', 'foto-homem.png')
+                img.setAttribute('src', 'homem.png')
             } else {
                 //IDOSO
-                img.setAttribute('src','foto-homemvelho.png')
+                img.setAttribute('src','homemvelho.png')
             }
         } else if (fsex[1].checked) {
             genero = 'mulher'
             if (idade >= 0 && idade < 10) {
                 //CRIANÇA  
-                img.setAttribute('src', 'foto-menina.png') 
+                img.setAttribute('src', 'menina.png') 
             }   else if (idade < 21) {
                 //JOVEM
-                img.setAttribute('src','foto-mulherjovem.png')
+                img.setAttribute('src','mulherjovem.png')
             } else if (idade < 60) {
                 //ADULTO
-                img.setAttribute('src', 'foto-mulher.png')
+                img.setAttribute('src', 'mulher.png')
             } else {
                 //IDOSO
-                img.setAttribute('src', 'foto.mulhervelha.png')
+                img.setAttribute('src', 'mulhervelha.png')
             }
         }
         res.style.textAlign = 'center'
         res.innerHTML = `Você é ${genero} e tem ${idade} anos`
         res.appendChild(img)
+        img.style.padding = '10px'
     }
 }
    
